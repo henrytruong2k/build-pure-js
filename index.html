@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>App đặt vé xem phim</h1>
+    <div class="note">*Note:
+        <ul>
+            <li>Ghế màu nâu: đã đặt</li>
+            <li>Ghế màu xanh: chưa đặt</li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="seat-list"></div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="title">Book a seat</h3>
+            <div class="modal-form">
+                <div class="form-group">
+                    <label for="seatID">Seat ID: </label>
+                    <input type="text" class="form-control" id="seatID" readonly/>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" class="form-control" id="name"/>
+                </div>
+            </div>
+            <button id="save">Save</button>
+            
+        </div>
+        
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
